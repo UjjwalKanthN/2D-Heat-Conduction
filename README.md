@@ -275,6 +275,11 @@ The Successive Over Relaxation method is the most efficient as it has lower simu
 
 The above table shows the overall statistics of the methods implemented in the current analysis. We can successfully infer that of all the iterative methods used, the Successive Over-Relaxation method has the best results for the analysis as it has the lowest possible simulation time and iterations. Of all the approaches present, the Explicit Transient state analysis has the best possible solution statistics with respect to the simulation time. The steady state also has the lowest stats, but it is important to understand that the steady state is time independant and does not rely on Thermal Conductivity.
 
+| Method                                    | Simulation Time (s) | Number of Iterations | Final Error  |
+|-------------------------------------------|---------------------|----------------------|--------------|
+| Successive Over-Relaxation (Steady)       | 0.002315            | 35                   | 0.000009     |
+| Explicit Successive Over-Relaxation (Transient) | 0.006117            | 883                  | 0            |
+
 It is very important to understand that the SOR method also depends on a lot of factors like the Over Relaxation Factor, Thermal Conductivity, grid size and the time parameters. Particular to the SOR method, the over relaxation factor gives an edge when compared to the other methods as it can be tweaked easily to find the best possible accurate solution.
 
 
